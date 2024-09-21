@@ -1,0 +1,161 @@
+/* src/pages/home.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 0; /* Remove a margem padrão do body */
+}
+
+.container {
+  padding: 0;
+  width: 600px;
+  height: 550px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 20px #000000;
+}
+
+
+.home-container-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(100, 100, 100);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  font-weight: bold;
+  height: 90px;
+}
+
+.buttons-header{
+  display: flex;
+  flex-direction: row;  
+}
+svg {
+  color: black;
+}
+#house-svg-home{
+  position: absolute;
+  left: 47.4%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 75px;  
+  width: 75px;
+}
+
+#house-svg{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 75px;  
+  width: 75px;
+}
+.hour-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  height: 20px;
+  margin-bottom: 18px;
+}
+
+.hour-div p{
+  margin-left: 10px;  
+}
+
+.hour-div svg{
+  height: 21px;
+  width: 21 px;
+}
+
+.temp-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  height: 20px;
+  margin-top: 18px;
+}
+
+.temp-div svg {
+  display: flex;
+  align-items: end;
+  width: 21px;
+  height: 21px;
+}
+.temp-div p {
+  margin-left: 10px;
+}
+
+.prec-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  height: 20px;
+  margin-top: 18px;
+}
+
+.prec-div svg{
+  display: flex;
+  align-items: end;
+  width: 21px;
+  height: 21px;
+}
+.prec-div p{
+  margin-left: 25px;
+}
+
+.logout-div {
+  background-color: rgb(75, 75, 75);
+  box-shadow:  1px 1px 2px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  line-break: auto;
+  text-align: center;
+  width: 80px;
+  height: 60px;
+  border-radius: 12px;
+  font-size: 14px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+} 
+
+.logout-div:hover {
+  background-color: rgba(75, 75, 75, 0.556);
+}
+
+.logout-div p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.devices-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  align-items: center;
+  justify-items: center;
+  grid-template-areas:
+    "luz tranca"
+    "alarme cortinas"
+    "robo cafeteira"
+    "ar_condicionado aquecedor";
+  height: 100%;
+}
+
+.device-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  height: 70px;
+  width: 250px;
+  box-shadow: 0px 5px 10px #000000;
+  border-radius: 10px;
+}
